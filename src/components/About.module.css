@@ -60,7 +60,7 @@
 .skillCard:hover {
     transform: translateY(-5px);
     border-color: var(--accent-primary);
-    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px -10px var(--accent-glow);
 }
 
 .skillIcon {
