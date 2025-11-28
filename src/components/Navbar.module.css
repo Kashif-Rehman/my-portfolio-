@@ -78,6 +78,25 @@
     cursor: pointer;
 }
 
+.themeToggle {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition-fast), color var(--transition-fast);
+    margin-right: 0.75rem;
+}
+
+.themeToggle:hover {
+    background: var(--accent-primary);
+    color: #fff;
+}
+
 .mobileMenu {
     position: fixed;
     top: 0;

@@ -36,6 +36,7 @@
     filter: blur(80px);
     opacity: 0.5;
     animation: pulse 10s infinite ease-in-out;
+    will-change: transform, opacity;
 }
 
 @keyframes pulse {
@@ -81,6 +82,7 @@
     border: 4px solid rgba(59, 130, 246, 0.3);
     animation: morph 8s ease-in-out infinite;
     box-shadow: 0 0 50px rgba(59, 130, 246, 0.2);
+    will-change: border-radius;
 }
 
 .profileImage {
@@ -261,5 +263,14 @@
     .primaryBtn,
     .secondaryBtn {
         justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blob {
+        animation: none;
+    }
+    .imageContainer {
+        animation: none;
     }
 }

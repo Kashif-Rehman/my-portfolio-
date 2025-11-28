@@ -23,6 +23,26 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 2px 4px -2px rgba(0,0,0,0.4);
+  --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.5);
+}
+
+[data-theme='light'] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --bg-tertiary: #eef1f5;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --accent-primary: #0d6efd;
+  --accent-secondary: #6366f1;
+  --accent-glow: rgba(13,110,253,0.5);
+  --border-color: #d7dce2;
+  --shadow-sm: 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.15);
 }
 
 * {
@@ -100,4 +120,22 @@ code, pre, .font-mono {
 
 .fade-in {
   animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

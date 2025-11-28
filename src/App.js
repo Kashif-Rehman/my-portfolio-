@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import React, { Suspense, lazy } from 'react';
+
+const About = lazy(() => import('./components/About'));
+const Experience = lazy(() => import('./components/Experience'));
+const Projects = lazy(() => import('./components/Projects'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const Contact = lazy(() => import('./components/Contact'));
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -34,11 +36,13 @@ function App() {
       <Navbar activeSection={activeSection} />
       <main>
         <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Testimonials />
-        <Contact />
+        <Suspense fallback={<div style={{padding:'4rem 0', textAlign:'center'}}>Loading content...</div>}>
+          <About />
+          <Experience />
+          <Projects />
+          <Testimonials />
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
     </div>
