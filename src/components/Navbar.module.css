@@ -31,6 +31,7 @@
     color: var(--text-primary);
     cursor: pointer;
     font-family: 'JetBrains Mono', monospace;
+    position: relative;
 }
 
 .logoIcon {
@@ -38,7 +39,10 @@
 }
 
 .dot {
-    color: var(--accent-primary);
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .desktopLinks {
@@ -58,11 +62,30 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    position: relative;
 }
 
 .link:hover,
 .active {
     color: var(--accent-primary);
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+    transition: width var(--transition-normal);
+}
+
+.link:hover::after,
+.link:focus-visible::after,
+.active::after {
+    width: 60%;
 }
 
 .linkNumber {

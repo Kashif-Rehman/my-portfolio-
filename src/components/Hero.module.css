@@ -190,6 +190,67 @@
     transition: all 0.2s ease;
 }
 
+.hireBtn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.6rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 2px solid transparent;
+    background-image: linear-gradient(var(--bg-tertiary), var(--bg-tertiary)), var(--accent-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hireBtn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.hireBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    transform: skewX(-25deg);
+    animation: shimmer 3.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -40%; }
+    60% { left: 140%; }
+    100% { left: 140%; }
+}
+
+.hireBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px -10px rgba(20,184,166,0.4);
+}
+
+.hireBtn:hover::before { opacity: 1; }
+
+.hireBtn:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .hireBtn { transition: none; }
+    .hireBtn::after { animation: none; display: none; }
+}
+
 .primaryBtn {
     background: var(--accent-primary);
     color: white;
@@ -264,6 +325,7 @@
     .secondaryBtn {
         justify-content: center;
     }
+    .hireBtn { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
