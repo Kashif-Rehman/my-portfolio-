@@ -106,7 +106,7 @@
 .submitBtn {
     width: 100%;
     padding: 1rem;
-    background: var(--accent-gradient);
+    background: var(--accent-primary);
     color: white;
     border: none;
     border-radius: 8px;
@@ -117,14 +117,11 @@
     justify-content: center;
     gap: 0.5rem;
     transition: all 0.2s ease;
-    box-shadow: var(--shadow-sm);
-    position: relative;
-    overflow: hidden;
 }
 
 .submitBtn:hover:not(:disabled) {
+    background: #2563eb;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
 }
 
 .submitBtn:disabled {

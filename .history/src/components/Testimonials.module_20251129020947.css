@@ -26,7 +26,7 @@
     box-shadow: var(--shadow-sm);
 }
 
-.card:hover {\n    transform: translateY(-5px);\n    box-shadow: var(--shadow-md);\n    border-color: var(--accent-primary);\n}\n\n.quoteIcon {
+.quoteIcon {
     color: var(--accent-primary);
     opacity: 0.3;
     margin-bottom: 1rem;

@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* New Dark Theme Palette */
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-tertiary: #334155;
+  /* Colors */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
   
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-tertiary: #94a3b8;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
   
-  --accent-primary: #38bdf8;
-  --accent-secondary: #818cf8;
-  --accent-glow: rgba(56, 189, 248, 0.5);
+  --accent-primary: #3b82f6; /* Blue */
+  --accent-secondary: #8b5cf6; /* Purple */
+  --accent-glow: rgba(59, 130, 246, 0.5);
   
-  --border-color: #475569;
+  --border-color: #27272a;
   
   /* Spacing */
   --container-padding: 2rem;
@@ -28,26 +28,22 @@
   --radius-lg: 16px;
   --shadow-sm: 0 2px 4px -2px rgba(0,0,0,0.4);
   --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.5);
-  --accent-gradient: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  --accent-gradient: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), #14b8a6);
 }
 
 [data-theme='light'] {
-  /* New Light Theme Palette */
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
+  --bg-secondary: #f5f7fa;
+  --bg-tertiary: #eef1f5;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
   --text-tertiary: #64748b;
-
-  --accent-primary: #2563eb;
-  --accent-secondary: #4f46e5;
-  --accent-glow: rgba(37, 99, 235, 0.5);
-
-  --border-color: #e2e8f0;
-  --shadow-sm: 0 2px 4px -2px rgba(0,0,0,0.05);
-  --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.1);
+  --accent-primary: #0d6efd;
+  --accent-secondary: #6366f1;
+  --accent-glow: rgba(13,110,253,0.5);
+  --border-color: #d7dce2;
+  --shadow-sm: 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.15);
 }
 
 * {
@@ -112,19 +108,12 @@ code, pre, .font-mono {
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.glass-subtle {
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-}/* Animations */
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

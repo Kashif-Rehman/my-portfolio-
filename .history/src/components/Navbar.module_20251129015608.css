@@ -11,10 +11,9 @@
 
 .scrolled {
     padding: 1rem 0;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .content {
@@ -39,19 +38,11 @@
     color: var(--accent-primary);
 }
 
-.logoText {
+.dot {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-.dot {
-    /* The gradient is now on the parent, so the dot just needs to be part of it */
-    background: none;
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
-    background-clip: initial;
 }
 
 .desktopLinks {
