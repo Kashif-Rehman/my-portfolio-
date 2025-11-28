@@ -208,6 +208,7 @@
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    text-decoration: none; /* Add this */
 }
 
 .hireBtn::before {
