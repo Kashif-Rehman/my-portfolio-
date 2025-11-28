@@ -1,0 +1,106 @@
+.projects {
+    background: var(--bg-secondary);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--bg-tertiary);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+/* Color variants */
+.blue:hover {
+    border-color: #3b82f6;
+}
+
+.blue .iconWrapper {
+    color: #3b82f6;
+}
+
+.purple:hover {
+    border-color: #8b5cf6;
+}
+
+.purple .iconWrapper {
+    color: #8b5cf6;
+}
+
+.cyan:hover {
+    border-color: #06b6d4;
+}
+
+.cyan .iconWrapper {
+    color: #06b6d4;
+}
+
+.link {
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: var(--text-primary);
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.projectDesc {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-tertiary);
+}

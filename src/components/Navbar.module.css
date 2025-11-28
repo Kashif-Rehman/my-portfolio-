@@ -1,0 +1,127 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.scrolled {
+    padding: 1rem 0;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.logoIcon {
+    color: var(--accent-primary);
+}
+
+.dot {
+    color: var(--accent-primary);
+}
+
+.desktopLinks {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link:hover,
+.active {
+    color: var(--accent-primary);
+}
+
+.linkNumber {
+    color: var(--accent-primary);
+    font-size: 0.8rem;
+}
+
+.mobileBtn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: var(--bg-secondary);
+    padding: 5rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 999;
+    border-left: 1px solid var(--border-color);
+}
+
+.open {
+    right: 0;
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mobileLink {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.mobileLink:hover,
+.mobileLink.active {
+    color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+    .desktopLinks {
+        display: none;
+    }
+
+    .mobileBtn {
+        display: block;
+    }
+}

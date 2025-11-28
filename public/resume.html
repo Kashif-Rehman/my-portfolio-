@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashif Rehman - Resume</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #111;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #3b82f6;
+            font-weight: 600;
+            margin: 5px 0 15px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #3b82f6;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .item-subtitle {
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .item-desc {
+            font-size: 14px;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #333;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="no-print">
+        <a href="javascript:window.print()" class="download-btn">Save as PDF</a>
+    </div>
+
+    <div class="header">
+        <h1 class="name">Kashif Rehman</h1>
+        <div class="title">Software Engineer & IoT Specialist</div>
+        <div class="contact-info">
+            <span>📞 +92 316-7602233</span>
+            <span>✉️ iaamkashif@gmail.com</span>
+            <span>📍 Bhimber, AJK</span>
+            <span>🔗 linkedin.com/in/kashif-rehman</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="item-desc">
+            Award-winning Software Engineer with a strong foundation in React JS, IoT technologies, and E-commerce
+            operations.
+            Proven track record of delivering innovative solutions, including a national award-winning Smart Helmet
+            project.
+            Passionate about building secure, scalable, and user-centric applications.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">eBay Marketplace Specialist</span>
+                <span class="item-date">2020 - Present</span>
+            </div>
+            <div class="item-subtitle">Self-Employed</div>
+            <ul class="item-desc">
+                <li>Managed comprehensive e-commerce operations, achieving a 100% customer satisfaction rating.</li>
+                <li>Optimized product listings and inventory management for over 500 successful transactions.</li>
+                <li>Handled customer service and order fulfillment with exceptional attention to detail.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">React JS Developer (Trainee)</span>
+                <span class="item-date">2023</span>
+            </div>
+            <div class="item-subtitle">Hadi Learning Software Institute</div>
+            <ul class="item-desc">
+                <li>Completed intensive training in modern React JS development and component architecture.</li>
+                <li>Built responsive web applications using Firebase and modern CSS frameworks.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Digital Marketing Intern</span>
+                <span class="item-date">2022</span>
+            </div>
+            <div class="item-subtitle">Moboroid</div>
+            <ul class="item-desc">
+                <li>Executed digital marketing strategies and managed social media campaigns.</li>
+                <li>Analyzed user engagement data to optimize content reach.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Smart Helmet for Coal Miners</span>
+                <span class="item-date">IoT / C++</span>
+            </div>
+            <p class="item-desc">
+                Award-winning safety system featuring real-time gas detection, temperature monitoring, and emergency
+                alerts.
+                Secured 3rd position in All-Pakistan PEC Competition.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Sata Al Faraj Website</span>
+                <span class="item-date">React JS</span>
+            </div>
+            <p class="item-desc">
+                Developed a modern, responsive corporate website showcasing services and portfolio with a premium UI
+                design.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Halal Food Scanner App</span>
+                <span class="item-date">React Native / API</span>
+            </div>
+            <p class="item-desc">
+                Mobile application enabling users to identify halal products via barcode scanning and database lookup.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Bachelor of Software Engineering</span>
+                <span class="item-date">2020 - 2024</span>
+            </div>
+            <div class="item-subtitle">Mirpur University of Science & Technology (MUST)</div>
+            <div class="item-desc">CGPA: 3.2/4.0</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Frontend:</span> React JS, HTML5, CSS3, JavaScript (ES6+)</div>
+            <div><span class="skill-category">IoT:</span> Arduino, C++, Sensors, Circuit Design</div>
+            <div><span class="skill-category">Tools:</span> Git, VS Code, Firebase, npm</div>
+            <div><span class="skill-category">Other:</span> E-commerce Management, Digital Marketing</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Awards</div>
+        <ul class="item-desc">
+            <li><strong>3rd Position (National):</strong> PEC Final Year Project Competition 2024</li>
+            <li><strong>1st Position (Regional):</strong> AJK FYP Competition 2024</li>
+        </ul>
+    </div>
+</body>
+
+</html>
