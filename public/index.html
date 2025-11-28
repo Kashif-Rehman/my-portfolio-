@@ -6,6 +6,8 @@
   <link rel="icon" href="%PUBLIC_URL%/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://kashifrehmanportfolio.web.app/" />
 
   <!-- SEO Meta Tags -->
   <meta name="description"
@@ -44,24 +46,39 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AK Tech Astra",
-      "founder": {
-        "@type": "Person",
-        "name": "Kashif Rehman"
-      },
-      "url": "https://kashifrehmanportfolio.web.app/",
-      "sameAs": [
-        "https://github.com/Kashif-Rehman",
-        "https://www.linkedin.com/in/kashif-rehman-65354520b"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bhimber",
-        "addressRegion": "AJK",
-        "addressCountry": "Pakistan"
-      },
-      "description": "Premium Software Engineering & IoT Services."
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://kashifrehmanportfolio.web.app/#person",
+          "name": "Kashif Rehman",
+          "jobTitle": "Software Engineer & IoT Specialist",
+          "image": "https://kashifrehmanportfolio.web.app/logo.png",
+          "url": "https://kashifrehmanportfolio.web.app/",
+          "sameAs": [
+            "https://github.com/Kashif-Rehman",
+            "https://www.linkedin.com/in/kashif-rehman-65354520b"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bhimber",
+            "addressRegion": "AJK",
+            "addressCountry": "Pakistan"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://kashifrehmanportfolio.web.app/#organization",
+          "name": "AK Tech Astra",
+          "url": "https://kashifrehmanportfolio.web.app/",
+          "logo": "https://kashifrehmanportfolio.web.app/logo.png",
+          "founder": {"@id": "https://kashifrehmanportfolio.web.app/#person"},
+          "sameAs": [
+            "https://github.com/Kashif-Rehman",
+            "https://www.linkedin.com/in/kashif-rehman-65354520b"
+          ],
+          "description": "Premium Software Engineering & IoT Services."
+        }
+      ]
     }
     </script>
 

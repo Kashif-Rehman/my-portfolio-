@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# AK Tech Astra Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern personal portfolio for **Kashif Rehman** showcasing software engineering, IoT innovation, e‑commerce experience, and award‑winning projects.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- Responsive, mobile‑first React interface
+- Accessible components (ARIA labels, semantic headings) with animated section reveal
+- Project showcase with external links
+- Experience timeline (work, education, awards)
+- Testimonials for social proof
+- Email contact form powered by `emailjs`
+- Enhanced SEO (meta tags, Open Graph, Twitter, JSON‑LD Person & Organization)
+- Performance touches (lazy loaded images)
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19 / Create React App
+- CSS Modules for scoped styling
+- EmailJS for form submissions
+- Lucide React icons
+- Firebase Hosting (deployment)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+```bash
+npm install
+npm start
+```
+App runs at `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Production Build
+```bash
+npm run build
+```
+Outputs optimized bundle in `build/` ready for Firebase or any static host.
 
-### `npm run build`
+## 📬 Contact Form Configuration
+Update the service ID, template ID, and public key in `src/components/Contact.js` to match your EmailJS account if you fork this repo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Structure
+```
+public/        # Static HTML + manifest + SEO
+src/components # Modular UI sections
+src/images     # Local assets
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧩 SEO & Metadata
+`public/index.html` includes:
+- Meta description & keywords
+- Canonical + robots tag
+- Open Graph + Twitter cards
+- JSON-LD structured data (Person + Organization)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✅ Accessibility
+- Descriptive alt text and aria-labels
+- Keyboard-focusable nav buttons
+- Color contrast mindful dark theme
 
-### `npm run eject`
+## 📈 Future Improvements
+- Dark/light theme toggle
+- Automated Lighthouse CI
+- Unit tests for intersection reveal logic
+- Add more structured data (Projects as CreativeWork)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏆 Highlights
+- Smart Helmet for Coal Miners (National PEC competition – 3rd place)
+- 4 years eBay marketplace operations experience
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 License
+Personal portfolio source; feel free to reference structure. Remove personal data before reuse.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🙌 Acknowledgments
+Built with Create React App and Lucide icons.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

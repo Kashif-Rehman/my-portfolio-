@@ -20,13 +20,13 @@ const Footer = () => {
                     </div>
 
                     <div className={styles.right}>
-                        <a href="https://github.com/Kashif-Rehman" target="_blank" rel="noopener noreferrer" className={styles.social}>
+                        <a href="https://github.com/Kashif-Rehman" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="GitHub profile">
                             <Github size={18} />
                         </a>
-                        <a href="https://www.linkedin.com/in/kashif-rehman-65354520b" target="_blank" rel="noopener noreferrer" className={styles.social}>
+                        <a href="https://www.linkedin.com/in/kashif-rehman-65354520b" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="LinkedIn profile">
                             <Linkedin size={18} />
                         </a>
-                        <a href="mailto:iaamkashif@gmail.com" className={styles.social}>
+                        <a href="mailto:iaamkashif@gmail.com" className={styles.social} aria-label="Send me an email">
                             <Mail size={18} />
                         </a>
                     </div>

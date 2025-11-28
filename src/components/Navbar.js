@@ -34,20 +34,27 @@ const Navbar = ({ activeSection }) => {
         <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
             <div className="container">
                 <div className={styles.content}>
-                    <div className={styles.logo} onClick={() => scrollToSection('home')}>
-                        <img src={require('../images/logo.png')} alt="AK Tech Astra" className={styles.logoImage} style={{ height: '40px', width: 'auto' }} />
+                    <button
+                        type="button"
+                        className={styles.logo}
+                        onClick={() => scrollToSection('home')}
+                        aria-label="Go to Home section"
+                    >
+                        <img src={require('../images/logo.png')} alt="AK Tech Astra logo" className={styles.logoImage} style={{ height: '40px', width: 'auto' }} loading="lazy" />
                         <span className={styles.logoText}>AK Tech Astra<span className={styles.dot}>.</span></span>
-                    </div>
+                    </button>
 
                     {/* Desktop Nav */}
                     <ul className={styles.desktopLinks}>
-                        {navLinks.map((link) => (
+                        {navLinks.map((link, i) => (
                             <li key={link.id}>
                                 <button
                                     onClick={() => scrollToSection(link.id)}
                                     className={`${styles.link} ${activeSection === link.id ? styles.active : ''}`}
+                                    aria-label={`Go to ${link.name} section`}
+                                    aria-current={activeSection === link.id ? 'true' : undefined}
                                 >
-                                    <span className={styles.linkNumber}>0{navLinks.indexOf(link) + 1}.</span>
+                                    <span className={styles.linkNumber}>0{i + 1}.</span>
                                     {link.name}
                                 </button>
                             </li>

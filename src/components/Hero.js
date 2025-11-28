@@ -33,22 +33,25 @@ const Hero = () => {
                         </p>
 
                         <div className={styles.actions}>
-                            <a href="#projects" className={styles.primaryBtn}>
+                            <a href="#projects" className={styles.primaryBtn} aria-label="View my project portfolio">
                                 View Projects <ArrowRight size={18} />
                             </a>
-                            <a href="/resume.html" target="_blank" className={styles.secondaryBtn}>
+                            <a href="/resume.html" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn} aria-label="Open my resume in a new tab">
                                 View Resume <Download size={18} />
+                            </a>
+                            <a href="#contact" className={styles.hireBtn} aria-label="Hire me - jump to contact form">
+                                Hire Me
                             </a>
                         </div>
 
                         <div className={styles.socials}>
-                            <a href="https://github.com/Kashif-Rehman" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                            <a href="https://github.com/Kashif-Rehman" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="GitHub profile">
                                 <Github size={20} />
                             </a>
-                            <a href="https://www.linkedin.com/in/kashif-rehman-65354520b" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                            <a href="https://www.linkedin.com/in/kashif-rehman-65354520b" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn profile">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="mailto:iaamkashif@gmail.com" className={styles.socialLink}>
+                            <a href="mailto:iaamkashif@gmail.com" className={styles.socialLink} aria-label="Send me an email">
                                 <Mail size={20} />
                             </a>
                         </div>
@@ -56,7 +59,7 @@ const Hero = () => {
 
                     <div className={styles.imageWrapper}>
                         <div className={styles.imageContainer}>
-                            <img src={require('../images/dp.jpg')} alt="Kashif Rehman" className={styles.profileImage} />
+                            <img src={require('../images/dp.jpg')} alt="Portrait of Kashif Rehman" className={styles.profileImage} loading="lazy" />
                             <div className={styles.imageGlow} />
                         </div>
                     </div>
